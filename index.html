@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Check My Name - Taxonomic Name Matching Service Explorer</title>
+
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+	<script src="js/jquery.collapse.js"></script>
+	<script src="js/indeterminateCheckbox.js"></script>
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.0.0/css/bootstrap.min.css">
+	<link rel='stylesheet' id='google-fonts-1-css' href='https://fonts.googleapis.com/css?family=Montserrat%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic&#038;display=swap&#038;ver=6.3.5' media='all' />
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="https://cdn.jsdelivr.net/vue/latest/vue.js"></script>
+	<script src="data.js"></script>
+	<script src="js/ui_texts.js"></script>
+</head>
+<body>
+    <div id="el">
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <img id="logo" src="img/TETTRIs_Logo.png" alt="Logo of the TETTRIs Project" /><a class="navbar-brand" href="#" v-on:click="reset()">Check My Name</a>
+        </div>
+      </div>
+    </nav>
+
+    <div class="content" style="margin-top: 50px;">
+	  <div id="introduction" class="container">
+      <h2>Check My Name</h2>
+	  <h4>Taxonomic Name Matching Service Explorer</h4>
+	  <p>a text describing the service. <br />Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+	  </div>
+	  <div id="filters" class="container">
+	  <h3>Filters</h3>
+	  <div id="" class="filter-row filter-row-flex">
+	  <div id="filter-geographic-scope" data-collapse class="filter col c1">
+        <h4>Geographic Scope</h4>
+        <div id="filter-geographic-scope-content" class="filter-content">
+		<ul class="tree" style="">
+            <li>
+                <input v-model="filter_geographic" class="indeterminate-checkbox" type="checkbox" id="geo.global" value="global" />
+				<label for="geo.global">Global</label>
+                <ul>
+                    <li>
+						<input v-model="filter_geographic" class="indeterminate-checkbox" type="checkbox" id="geo.europe" value="europe" />
+						<label for="geo.europe">Europe</label>	
+						<ul>
+							<li>
+								<input v-model="filter_geographic" class="indeterminate-checkbox" type="checkbox" id="geo.at" value="at" />
+								<label for="geo.at">Austria</label>
+							</li>
+							<li>
+								<input v-model="filter_geographic" class="indeterminate-checkbox" type="checkbox" id="geo.be" value="be" />
+								<label for="geo.be">Belgium</label>
+							</li>
+							<li>
+								<input v-model="filter_geographic" class="indeterminate-checkbox" type="checkbox" id="geo.bg" value="bg" />
+								<label for="geo.bg">Bulgaria</label>
+							</li>
+							<li>
+								<input v-model="filter_geographic" class="indeterminate-checkbox" type="checkbox" id="geo.hr" value="hr" />
+								<label for="geo.hr">Croatia</label>
+							</li>
+							<li>
+								<input v-model="filter_geographic" class="indeterminate-checkbox" type="checkbox" id="geo.cy" value="cy" />
+								<label for="geo.cy">Cyprus</label>
+							</li>
+							<li>
+								<input v-model="filter_geographic" class="indeterminate-checkbox" type="checkbox" id="geo.cz" value="cz" />
+								<label for="geo.cz">Czech Republic</label>
+							</li>
+							<li>
+								<input v-model="filter_geographic" class="indeterminate-checkbox" type="checkbox" id="geo.dk" value="dk" />
+								<label for="geo.dk">Denmark</label>
+							</li>
+							<li>
+								<input v-model="filter_geographic" class="indeterminate-checkbox" type="checkbox" id="geo.ee" value="ee" />
+								<label for="geo.ee">Estonia</label>
+							</li>
+							<li>
+								<input v-model="filter_geographic" class="indeterminate-checkbox" type="checkbox" id="geo.fi" value="fi" />
+								<label for="geo.fi">Finland</label>
+							</li>
+							<li>
+								<input v-model="filter_geographic" class="indeterminate-checkbox" type="checkbox" id="geo.fr" value="fr" />
+								<label for="geo.fr">France</label>
+							</li>
+							<li>
+								<input v-model="filter_geographic" class="indeterminate-checkbox" type="checkbox" id="geo.de" value="de" />
+								<label for="geo.de">Germany</label>
+							</li>
+							<li>
+								<input v-model="filter_geographic" class="indeterminate-checkbox" type="checkbox" id="geo.gr" value="gr" />
+								<label for="geo.gr">Greece</label>
+							</li>
+							<li>
+								<input v-model="filter_geographic" class="indeterminate-checkbox" type="checkbox" id="geo.hu" value="hu" />
+								<label for="geo.hu">Hungary</label>
+							</li>
+							<li>
+								<input v-model="filter_geographic" class="indeterminate-checkbox" type="checkbox" id="geo.is" value="is" />
+								<label for="geo.is">Iceland</label>
+							</li>
+							<li>
+								<input v-model="filter_geographic" class="indeterminate-checkbox" type="checkbox" id="geo.ie" value="ie" />
+								<label for="geo.ie">Ireland</label>
+							</li>
+							<li>
+								<input v-model="filter_geographic" class="indeterminate-checkbox" type="checkbox" id="geo.it" value="it" />
+								<label for="geo.it">Italy</label>
+							</li>
+							<li>
+								<input v-model="filter_geographic" class="indeterminate-checkbox" type="checkbox" id="geo.lv" value="lv" />
+								<label for="geo.lv">Latvia</label>
+							</li>
+							<li>
+								<input v-model="filter_geographic" class="indeterminate-checkbox" type="checkbox" id="geo.lt" value="lt" />
+								<label for="geo.lt">Lithuania</label>
+							</li>
+							<li>
+								<input v-model="filter_geographic" class="indeterminate-checkbox" type="checkbox" id="geo.lu" value="lu" />
+								<label for="geo.lu">Luxembourg</label>
+							</li>
+							<li>
+								<input v-model="filter_geographic" class="indeterminate-checkbox" type="checkbox" id="geo.mt" value="mt" />
+								<label for="geo.mt">Malta</label>
+							</li>
+							<li>
+								<input v-model="filter_geographic" class="indeterminate-checkbox" type="checkbox" id="geo.nl" value="nl" />
+								<label for="geo.nl">Netherlands</label>
+							</li>
+							<li>
+								<input v-model="filter_geographic" class="indeterminate-checkbox" type="checkbox" id="geo.no" value="no" />
+								<label for="geo.no">Norway</label>
+							</li>
+							<li>
+								<input v-model="filter_geographic" class="indeterminate-checkbox" type="checkbox" id="geo.pl" value="pl" />
+								<label for="geo.pl">Poland</label>
+							</li>
+							<li>
+								<input v-model="filter_geographic" class="indeterminate-checkbox" type="checkbox" id="geo.pt" value="pt" />
+								<label for="geo.pt">Portugal</label>
+							</li>
+							<li>
+								<input v-model="filter_geographic" class="indeterminate-checkbox" type="checkbox" id="geo.ro" value="ro" />
+								<label for="geo.ro">Romania</label>
+							</li>
+							<li>
+								<input v-model="filter_geographic" class="indeterminate-checkbox" type="checkbox" id="geo.sk" value="sk" />
+								<label for="geo.sk">Slovakia</label>
+							</li>
+							<li>
+								<input v-model="filter_geographic" class="indeterminate-checkbox" type="checkbox" id="geo.si" value="si" />
+								<label for="geo.si">Slovenia</label>
+							</li>
+							<li>
+								<input v-model="filter_geographic" class="indeterminate-checkbox" type="checkbox" id="geo.es" value="es" />
+								<label for="geo.es">Spain</label>
+							</li>
+							<li>
+								<input v-model="filter_geographic" class="indeterminate-checkbox" type="checkbox" id="geo.se" value="se" />
+								<label for="geo.se">Sweden</label>
+							</li>
+							<li>
+								<input v-model="filter_geographic" class="indeterminate-checkbox" type="checkbox" id="geo.ch" value="ch" />
+								<label for="geo.ch">Switzerland</label>
+							</li>
+							<li>
+								<input v-model="filter_geographic" class="indeterminate-checkbox" type="checkbox" id="geo.gb" value="gb" />
+								<label for="geo.gb">United Kingdom</label>
+							</li>
+						</ul>
+                    </li>
+                </ul>
+            </li>
+		</ul>
+		</div>
+      </div>
+	  
+	  <div id="filter-taxonomic-scope" data-collapse class="filter col c2">
+        <h4>Taxonomic Scope</h4>
+        <div id="filter-taxonomic-scope-content" class="filter-content">
+			<ul class="tree" style="">
+				<li>
+					<input v-model="filter_taxonomic" class="indeterminate-checkbox" type="checkbox" id="tax.multiple" value="multiple" />
+					<label for="tax.multiple">Multiple or unknown</label>
+					<ul>
+						<li>
+							<input v-model="filter_taxonomic" class="indeterminate-checkbox" type="checkbox" id="tax.animalia" value="animalia" />
+							<label for="tax.animalia">Animals</label>
+						</li>
+						<li>
+							<input v-model="filter_taxonomic" class="indeterminate-checkbox" type="checkbox" id="tax.plantae" value="plantae" />
+							<label for="tax.plantae">Plants</label>
+						</li>
+						<li>
+							<input v-model="filter_taxonomic" class="indeterminate-checkbox" type="checkbox" id="tax.algae" value="algae" />
+							<label for="tax.algae">Algae</label>
+						</li>
+						<li>
+							<input v-model="filter_taxonomic" class="indeterminate-checkbox" type="checkbox" id="tax.fungi" value="fungi" />
+							<label for="tax.fungi">Fungi</label>
+						</li>
+						<li>
+							<input v-model="filter_taxonomic" class="indeterminate-checkbox" type="checkbox" id="tax.cyanobacteria" value="cyanobacteria" />
+							<label for="tax.cyanobacteria">Bluegreen algae</label>
+						</li>
+						<li>
+							<input v-model="filter_taxonomic" class="indeterminate-checkbox" type="checkbox" id="tax.bacteria" value="bacteria" />
+							<label for="tax.bacteria">Bacteria</label>
+						</li>
+						<li>
+							<input v-model="filter_taxonomic" class="indeterminate-checkbox" type="checkbox" id="tax.virus" value="virus" />
+							<label for="tax.virus">Virus</label>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<input v-model="filter_taxonomic" class="indeterminate-checkbox" type="checkbox" id="tax.contains_fossils" value="contains_fossils" />
+					<label for="tax.contains_fossils">Include fossils</label>
+				</li>
+				<li>
+					<input v-model="filter_taxonomic" class="indeterminate-checkbox" type="checkbox" id="tax.fossile_only" value="fossile_only" />
+					<label for="tax.fossile_only">Only fossils</label>
+				</li>
+				<li>
+					<input v-model="filter_taxonomic" class="indeterminate-checkbox" type="checkbox" id="tax.marine_only" value="marine_only" />
+					<label for="tax.marine_only">Only marine species</label>
+				</li>
+			</ul>
+		</div>
+      </div>
+	  <div id="filter-data-size" data-collapse class="filter col c3">
+        <h4>Number of records</h4>
+        <div id="filter-data-size-content" class="filter-content">
+		
+		    This filter does not work yet.
+			<div class="inactive">
+			Number of names to be check simulaneously:
+			<br />
+			<br />
+			In the User Interface (add items via copy &amp; paste)
+			<ul class="tree" style="margin-left: 15px;">
+				<li>
+					<input v-model="filter_size_ui" class="" type="radio" id="size.ui.small" value="small" />
+					<label for="size.ui.small">less or equal 5000</label>
+				</li>
+				<li>
+					<input v-model="filter_size_ui" class="" type="radio" id="size.ui.large" value="large" />
+					<label for="size.ui.large">more than 5000</label>
+				</li>
+			</ul>
+			<br />
+			Via file upload
+			<ul class="tree" style="margin-left: 15px;">
+				<li>
+					<input v-model="filter_size_upload" class="" type="radio" id="size.upload.small" value="small" />
+					<label for="size.upload.small">less or equal 5000</label>
+				</li>
+				<li>
+					<input v-model="filter_size_upload" class="" type="radio" id="size.upload.large" value="large" />
+					<label for="size.upload.large">more than 5000</label>
+				</li>
+			</ul>
+			</div>
+		</div>
+      </div>
+	  </div>
+	  
+	 <div class="filter-row">
+	 <div id="filter-purpose" data-collapse class="filter ">
+		<h4>Purpose</h4>
+		<div id="filter-purpose-content" class="filter-content">
+			I want to check ...
+			<ul>
+				<li>
+					<input type="checkbox" id="purpose.default" checked="checked" disabled="true">
+					<label for="purpose.default">Orthography of canonical name (name without author / year)</label>
+				</li>
+				<li>
+					<input v-model="filter_purpose" type="checkbox" id="purpose.full_name_checked" value="full_name_checked">
+					<label for="purpose.full_name_checked">Orthography of full name (also checking author abbreviations and year)</label>
+				</li>
+				<li>
+					<input v-model="filter_purpose" type="checkbox" id="purpose.acceptance" value="acceptance">
+					<label for="purpose.acceptance">Acceptance (if it is a taxon name, or a synonym of another name, or taxonomically unresolved)</label>
+				</li>
+				<li>
+					<input v-model="filter_purpose" type="checkbox" id="purpose.classification" value="classification">
+					<label for="purpose.classification">Classification (inclusion in higher taxa according to the dataset’s hierarchy)</label>
+				</li>
+			<ul>
+
+		</div>
+	  </div>
+	  </div>
+	  <div class="filter-row">
+	  <div id="filter-data-linkage" data-collapse class="filter">
+		<h4>Data Linkage</h4>
+		<div id="filter-data-linkage-content" class="filter-content">
+			Please select your requirements
+			<ul>
+				<li>
+					<input v-model="filter_linkage" type="radio" id="linkage.default" value="default">
+					<label for="linkage.default">I am not interested in identifiers and links for the name</label>
+				</li>
+				<li>
+					<input v-model="filter_linkage" type="radio" id="linkage.output_persistent_id" value="output_persistent_id">
+					<label for="linkage.output_persistent_id">I want a persistent identifier for the name in the dataset that corresponds to my local name</label>
+				</li>
+				<li>
+					<input v-model="filter_linkage" type="radio" id="linkage.output_persistent_resolvable_id" value="output_persistent_resolvable_id">
+					<label for="linkage.output_persistent_resolvable_id">I want a persistent resolvable identifier for the name in the dataset that corresponds to my local name</label>
+				</li>
+				<li>
+					<input v-model="filter_linkage" type="radio" id="linkage.name_id_resolved_2_taxon" value="name_id_resolved_2_taxon">
+					<label for="linkage.name_id_resolved_2_taxon">I want a persistent resolvable identifier for the taxon (accepted name) that corresponds to my local name</label>
+				</li>
+			<ul>
+
+		</div>
+	  </div>
+	  </div>
+	  <div class="filter-row">
+	  <div id="filter-technical-requirements" data-collapse class="filter">
+		<h4>Technical Requirements</h4>
+		<div id="filter-technical-requirements-content" class="filter-content">
+			I want to ...
+			<ul>
+				<li>
+					<input v-model="filter_requirements" type="checkbox" id="requirement.direct_matching_interface" value="direct_matching_interface">
+					<label for="requirement.direct_matching_interface">write or paste the names into a web interface (usually limited number)</label>
+				</li>
+				<li>
+					<input v-model="filter_requirements" type="checkbox" id="requirement.file_matching_interface" value="file_matching_interface">
+					<label for="requirement.file_matching_interface">upload a list or table and receive the result as table or tables</label>
+				</li>
+				<li>
+					<input v-model="filter_requirements" type="checkbox" id="requirement.open_refine_reconciliation_if" value="open_refine_reconciliation_if">
+					<label for="requirement.open_refine_reconciliation_if">use OpenRefine as the name matching tool</label>
+				</li>
+				<li>
+					<input v-model="filter_requirements" type="checkbox" id="requirement.download" value="download">
+					<label for="requirement.download">download the data, I’ll do the matching in my own database</label>
+				</li>
+				<li>
+					<input v-model="filter_requirements" type="checkbox" id="requirement.api" value="api">
+					<label for="requirement.api">program my name matching using the on-line API of the aggregator</label>
+				</li>
+				<li>
+					<input v-model="filter_requirements" type="checkbox" id="requirement.r_package" value="r_package">
+					<label for="requirement.r_package">use an R-package that can be downloaded</label>
+				</li>
+				<li>
+					<input v-model="filter_requirements" type="checkbox" id="requirement.local_installation" value="local_installation">
+					<label for="requirement.local_installation">install the name matching service on my server</label>
+				</li>
+			</ul>
+
+		</div>
+	  </div>
+	  </div>
+
+	  </div>
+<div id="results">
+	  <h3>Suitable Matching Services and Datasets ({{ searchResult.length }})</h3>
+
+<div id="results-content" class="">
+        <div id="results-area" class="container col-md-10 col-xs-10">
+          <table class="table table-striped">
+            <tbody>
+              <tr :id="`service-${item.id}`" v-for="item of searchResult" v-bind:class="{ selected: (item.id == selected_id) ? 'selected2' : '' }" v-on:click.stop.prevent="showDetails(item)" >
+                <td >
+                  <b>{{ item.service_name }}</b>
+                  <br />
+                  {{ item.dataset_name }}
+                </td>
+				<td>
+				  <span class="bubble bubble-taxon" style="" v-for="group in item.organism_groups">{{ showLabel(group, 'organism_group') }}</span>
+                </td>
+                <td >
+  				  <span class="bubble bubble-feature"  v-for="requirement in item.requirements">{{ showLabel(requirement, 'requirements') }}</span>
+                </td>
+				<td>
+				  <span class="bubble bubble-purpose" >{{ showLabel('canonical_name_checked', 'purpose') }}</span>
+                  <span class="bubble bubble-purpose" v-for="purpose in item.purpose">{{ showLabel(purpose, 'purpose') }}</span>
+                </td>
+				<td>
+				  <span v-if="item.geographic_scope.includes('global')" :title="`${showLabel('global', 'countries', 'name')}`">{{ showLabel('global', 'countries', 'flag') }}</span>
+				  <span v-else-if="item.geographic_scope.includes('europe')" :title="`${showLabel('europe', 'countries', 'name')}`">{{ showLabel('europe', 'countries', 'flag') }}</span>
+				  <span v-else v-for="scope in item.geographic_scope" :title="`${showLabel(scope, 'countries', 'name')}`">{{ showLabel(scope, 'countries', 'flag') }}</span>
+                  <!--<a :href="`#service-${item.id}`" v-on:click.stop.prevent="showDetails(item)">show Details &gt;&gt;&gt;</a>-->
+				</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+		<div id="details-area" v-if="selected_record">
+		<div id="details-view" >
+			<a id="details-close" title="close details window" href="#" v-on:click.stop.prevent="closeDetails">✖</a>
+			<h4 alt="name of the service">{{ selected_record.service_name }}</h4>
+			<p>with <b>{{ selected_record.dataset_name }}</b> dataset</p>
+			<p v-if="selected_record.notes">{{ selected_record.notes }}</p>
+			<table class="table table-striped">
+            <tbody>
+				<tr v-if="selected_record.geographic_scope">
+					<td>Geographic Scope</td>
+					<td>
+					  <span class="bubble bubble-scope" v-if="selected_record.geographic_scope.includes('global')" :title="`${showLabel('global', 'countries', 'name')}`">{{ showLabel('global', 'countries', 'flag') }} {{ showLabel('global', 'countries', 'name') }}</span>
+					  <span class="bubble bubble-scope" v-else-if="selected_record.geographic_scope.includes('europe')" :title="`${showLabel('europe', 'countries', 'name')}`">{{ showLabel('europe', 'countries', 'flag') }} {{ showLabel('europe', 'countries', 'name') }}</span>
+					  <span class="bubble bubble-scope" v-else v-for="scope in selected_record.geographic_scope" :title="`${showLabel(scope, 'countries', 'name')}`">{{ showLabel(scope, 'countries', 'flag') }} {{ showLabel(scope, 'countries', 'name') }}</span>
+					</td>
+				</tr>
+				<tr v-if="selected_record.organism_groups">
+					<td>Taxonomic Scope</td>
+					<td><span class="bubble bubble-feature" style="" v-for="group in selected_record.organism_groups">{{ group }}</span></td>
+				</tr>
+				<tr v-if="selected_record.requirements">
+					<td>Features</td>
+					<td><span class="bubble bubble-feature" style="" v-for="feature in selected_record.requirements">{{ feature }}</span></td>
+				</tr>
+				<tr v-if="selected_record.homepage">
+					<td>Website of the Datset</td>
+					<td><a href="" target="_blank">{{ selected_record.homepage }}</a></td>
+				</tr>
+				<tr v-if="selected_record.api_documentation">
+					<td>API Documentation</td>
+					<td><a href="" target="_blank">{{ selected_record.api_documentation }}</a></td>
+				</tr>
+			</tbody>
+			</table>
+		</div>
+		</div>
+
+		</div>
+		</div>
+      </div>
+    </div>
+	<div id="footer"><i>Check My Name - Taxonomic Name Matching Service Explorer</i> was developed in the <a href="https://www.tettris.eu">TETTRIs Project</a>.<br/> <a href="https://www.bo.berlin/en/imprint">Imprint</a> - <a href="https://github.com/DavidFichtmueller/Taxonomic-Name-Matching-Service-Explorer/issues">Report an Issue</a></div>
+  </div>
+
+  <script>
+// the rows comes from external resources
+
+var vm = new Vue({
+  el: '#el',
+  data: {
+	filter_geographic: [],
+	filter_taxonomic: [],
+	filter_size_ui: [],
+	filter_size_upload: [],
+	filter_purpose: [],
+	filter_linkage: 'default', //not an array, as it is controlled radio buttons (= only one value)
+	filter_requirements: [],
+	items : rows,
+	labels : ui_texts,
+	selected_record : null,
+	selected_id: -1
+  },
+  methods: {
+	init: function(){
+		selected_id = window.location.hash.substr(9);
+		if(selected_id.length){
+			//TODO: input sanitation
+			this.selected_id = selected_id;
+			//TODO: clean up: only works if id = position in array
+			this.selected_record = this.items[parseInt(selected_id)];
+			//document.getElementById('service-'+selected_id).scrollIntoView({behavior: 'smooth'});
+		}
+	},
+	showLabel: function(text, context, subcontext = ""){
+		if(text == ""){
+			return "";
+		}
+		if(context == "" || !Object.keys(this.labels).includes(context)){
+			return text.replaceAll("_"," ");
+		}
+		if(subcontext == ""){
+			if(!Object.keys(this.labels[context]).includes(text)){
+				return text.replaceAll("_"," ");
+			}else{
+				return this.labels[context][text];
+			}
+		}else{
+			if(!Object.keys(this.labels[context]).includes(text)){
+				return text.replaceAll("_"," ");
+			}else if(!Object.keys(this.labels[context][text]).includes(subcontext)){
+				return text.replaceAll("_"," ");
+			}else{
+				return this.labels[context][text][subcontext];
+			}
+		}
+	},
+	scroll:function(){
+		selected_id = window.location.hash.substr(9);
+		if(selected_id.length){
+			setTimeout(() => {
+				document.getElementById('service-'+selected_id).scrollIntoView({behavior: 'smooth'});
+			}, "300");
+
+			
+			console.log("scroll: "+selected_id);
+		}
+	},
+	showDetails: function(item){
+		console.log("hello "+item.id);
+		window.history.pushState(null,null,'#service-'+item.id);
+		this.selected_record = item;
+		this.selected_id = item.id;
+		setTimeout(() => {
+			document.getElementById('service-'+this.selected_id).scrollIntoView({behavior: 'smooth'});
+		}, "100");
+		return true;
+	},
+	closeDetails: function(item){
+		window.history.pushState(null,null,'#');
+		this.selected_record = null;
+		this.selected_id = -1;
+		return true;
+	},
+    reset: function () {
+	//TODO: proper reset, still old code
+      var filters = {};
+      Object.keys(configuration.aggregations).map(function(v) {
+        filters[v] = [];
+      })
+
+      this.filters = filters;
+      this.query = '';
+    }
+  },
+  
+  beforeMount() {
+   this.init()
+  },
+  
+  mounted() {
+   this.scroll()
+  },
+  computed: {
+    searchResult: function () {
+		  var filter_geographic = this.filter_geographic;
+		  var filter_taxonomic = this.filter_taxonomic;
+		  var filter_size_ui = this.filter_size_ui;
+		  var filter_size_upload = this.filter_size_upload;
+		  var filter_purpose = this.filter_purpose;
+		  var filter_linkage = this.filter_linkage;
+		  var filter_requirements = this.filter_requirements;
+			console.log(filter_requirements);
+		  
+	  	  return this.items.filter(function(item, index) {
+			output = true;
+			for (const organism_group of filter_taxonomic) {
+				if(item.organism_groups.indexOf(organism_group) == -1){
+					return false;
+				}
+			}
+			for (const geographic_scope of filter_geographic) {
+				if(item.geographic_scope.indexOf(geographic_scope) == -1){
+					return false;
+				}
+			}
+			for (const purpose of filter_purpose) {
+				if(item.purpose.indexOf(purpose) == -1){
+					return false;
+				}
+			}
+			
+			if(filter_linkage == "default"){
+				//do nothing
+			}else if(item.linkage.indexOf(filter_linkage) == -1){
+				return false;
+			}
+			
+			for (const requirement of filter_requirements) {
+				if(requirement == "download"){
+					if(index==0)(console.log("special case: download: " + item.requirements.indexOf("download_full_from_website") +" - " +item.requirements.indexOf("download_dataset")))
+					
+					//special case: download returns the dataset if either of the two flags is set
+					if(item.requirements.indexOf("download_full_from_website") == -1 && item.requirements.indexOf("download_dataset") == -1 ){
+						return false;
+					}
+				}else if(item.requirements.indexOf(requirement) == -1){
+					return false;
+				}
+			}
+			return output;
+		});
+	  }
+	}
+	  
+
+  }
+);
+  </script>
+  
+
+		<script>
+		//enable hierarchical checkboxes
+		IndeterminateCheckbox.init()
+      </script>
+</body>
+</html>
