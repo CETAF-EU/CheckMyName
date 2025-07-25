@@ -409,14 +409,14 @@
 				<tr v-if="selected_record.geographic_scope">
 					<td>Geographic Scope</td>
 					<td>
-					  <span class="bubble bubble-scope" v-if="selected_record.geographic_scope.includes('global')" :title="`${showLabel('global', 'countries', 'name')}`">{{ showLabel('global', 'countries', 'flag') }} {{ showLabel('global', 'countries', 'name') }}</span>
-					  <span class="bubble bubble-scope" v-else-if="selected_record.geographic_scope.includes('europe')" :title="`${showLabel('europe', 'countries', 'name')}`">{{ showLabel('europe', 'countries', 'flag') }} {{ showLabel('europe', 'countries', 'name') }}</span>
-					  <span class="bubble bubble-scope" v-else v-for="scope in selected_record.geographic_scope" :title="`${showLabel(scope, 'countries', 'name')}`">{{ showLabel(scope, 'countries', 'flag') }} {{ showLabel(scope, 'countries', 'name') }}</span>
+					  <span class="bubble bubble-geo" v-if="selected_record.geographic_scope.includes('global')" :title="`${showLabel('global', 'countries', 'name')}`">{{ showLabel('global', 'countries', 'flag') }} {{ showLabel('global', 'countries', 'name') }}</span>
+					  <span class="bubble bubble-geo" v-else-if="selected_record.geographic_scope.includes('europe')" :title="`${showLabel('europe', 'countries', 'name')}`">{{ showLabel('europe', 'countries', 'flag') }} {{ showLabel('europe', 'countries', 'name') }}</span>
+					  <span class="bubble bubble-geo" v-else v-for="scope in selected_record.geographic_scope" :title="`${showLabel(scope, 'countries', 'name')}`">{{ showLabel(scope, 'countries', 'flag') }} {{ showLabel(scope, 'countries', 'name') }}</span>
 					</td>
 				</tr>
 				<tr v-if="selected_record.organism_groups">
 					<td>Taxonomic Scope</td>
-					<td><span class="bubble bubble-feature" style="" v-for="group in selected_record.organism_groups">{{ group }}</span></td>
+					<td><span class="bubble bubble-taxon" style="" v-for="group in selected_record.organism_groups">{{ group }}</span></td>
 				</tr>
 				<tr v-if="selected_record.requirements">
 					<td>Features</td>

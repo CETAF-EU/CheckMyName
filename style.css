@@ -122,6 +122,9 @@ tr.selected td {
 .bubble-taxon{
 	background-color: #caeec7;
 }
+.bubble-geo{
+	background-color: #eca;
+}
 .bubble-feature{
 	background-color: #f2dbeb; 
 }
