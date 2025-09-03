@@ -68,7 +68,9 @@ var rows = [
             "local_installation"
         ],
         "homepage": "https://www.catalogueoflife.org/",
-        "api_documentation": "(ChecklistBank) https://www.checklistbank.org/about/API"
+        "api_documentation": "(ChecklistBank) https://www.checklistbank.org/about/API",
+        "direct_matching_restriction": 5000,
+        "file_matching_restriction": 1000000
     },
     {
         "id": 1,
@@ -136,7 +138,9 @@ var rows = [
             "local_installation"
         ],
         "homepage": "",
-        "api_documentation": "(ChecklistBank) https://www.checklistbank.org/about/API"
+        "api_documentation": "(ChecklistBank) https://www.checklistbank.org/about/API",
+        "direct_matching_restriction": 5000,
+        "file_matching_restriction": 1000000
     },
     {
         "id": 2,
@@ -198,7 +202,9 @@ var rows = [
             "api"
         ],
         "homepage": "https://www.gbif.org/dataset/d7dddbf4-2cf0-4f39-9b2a-bb099caae36c",
-        "api_documentation": "https://techdocs.gbif.org/en/openapi/v1/species"
+        "api_documentation": "https://techdocs.gbif.org/en/openapi/v1/species",
+        "direct_matching_restriction": 0,
+        "file_matching_restriction": 6000
     },
     {
         "id": 3,
@@ -264,7 +270,9 @@ var rows = [
             "local_installation"
         ],
         "homepage": "https://wfoplantlist.org/",
-        "api_documentation": "https://list.worldfloraonline.org/"
+        "api_documentation": "https://list.worldfloraonline.org/",
+        "direct_matching_restriction": 1000000,
+        "file_matching_restriction": 1000000
     },
     {
         "id": 4,
@@ -320,7 +328,9 @@ var rows = [
             "local_installation"
         ],
         "homepage": "https://www.ipni.org/",
-        "api_documentation": "In preparation according to https://www.ipni.org/about"
+        "api_documentation": "In preparation according to https://www.ipni.org/about",
+        "direct_matching_restriction": 5000,
+        "file_matching_restriction": 0
     },
     {
         "id": 5,
@@ -375,7 +385,9 @@ var rows = [
             "open_refine_reconciliation_if"
         ],
         "homepage": "https://www.ipni.org/",
-        "api_documentation": "In preparation according to https://www.ipni.org/about"
+        "api_documentation": "In preparation according to https://www.ipni.org/about",
+        "direct_matching_restriction": 1000,
+        "file_matching_restriction": 1000000
     },
     {
         "id": 6,
@@ -431,7 +443,9 @@ var rows = [
             "download_full_from_website"
         ],
         "homepage": "https://powo.science.kew.org/about-wcvp;",
-        "api_documentation": "(rudimentary API) https://barnabywalker.github.io/kewr/reference/download_wcvp.html"
+        "api_documentation": "(rudimentary API) https://barnabywalker.github.io/kewr/reference/download_wcvp.html",
+        "direct_matching_restriction": 1000,
+        "file_matching_restriction": 1000000
     },
     {
         "id": 7,
@@ -492,7 +506,9 @@ var rows = [
             "file_matching_interface"
         ],
         "homepage": "https://www.eu-nomen.eu/portal/",
-        "api_documentation": ""
+        "api_documentation": "",
+        "direct_matching_restriction": 0,
+        "file_matching_restriction": 1000
     },
     {
         "id": 8,
@@ -546,7 +562,9 @@ var rows = [
             "file_matching_interface"
         ],
         "homepage": "https://europlusmed.org/",
-        "api_documentation": ""
+        "api_documentation": "",
+        "direct_matching_restriction": 0,
+        "file_matching_restriction": 1000
     },
     {
         "id": 9,
@@ -601,7 +619,9 @@ var rows = [
             "local_installation"
         ],
         "homepage": "https://powo.science.kew.org/about-wcvp;",
-        "api_documentation": "(rudimentary API) https://barnabywalker.github.io/kewr/reference/download_wcvp.html"
+        "api_documentation": "(rudimentary API) https://barnabywalker.github.io/kewr/reference/download_wcvp.html",
+        "direct_matching_restriction": 0,
+        "file_matching_restriction": 0
     },
     {
         "id": 10,
@@ -667,7 +687,9 @@ var rows = [
             "api"
         ],
         "homepage": "https://www.marinespecies.org",
-        "api_documentation": "https://www.marinespecies.org/rest/"
+        "api_documentation": "https://www.marinespecies.org/rest/",
+        "direct_matching_restriction": 0,
+        "file_matching_restriction": 1500
     },
     {
         "id": 11,
@@ -730,7 +752,9 @@ var rows = [
             "api"
         ],
         "homepage": "https://powo.science.kew.org/about-wcvp;",
-        "api_documentation": "(rudimentary API) https://barnabywalker.github.io/kewr/reference/download_wcvp.html"
+        "api_documentation": "(rudimentary API) https://barnabywalker.github.io/kewr/reference/download_wcvp.html",
+        "direct_matching_restriction": 5000,
+        "file_matching_restriction": 0
     },
     {
         "id": 12,
@@ -793,7 +817,9 @@ var rows = [
             "api"
         ],
         "homepage": "https://wfoplantlist.org/",
-        "api_documentation": "https://list.worldfloraonline.org/"
+        "api_documentation": "https://list.worldfloraonline.org/",
+        "direct_matching_restriction": 5000,
+        "file_matching_restriction": 0
     },
     {
         "id": 13,
@@ -847,7 +873,9 @@ var rows = [
             "local_installation"
         ],
         "homepage": "https://github.com/idiv-biodiversity/LCVP",
-        "api_documentation": ""
+        "api_documentation": "",
+        "direct_matching_restriction": 0,
+        "file_matching_restriction": 0
     },
     {
         "id": 14,
@@ -911,7 +939,9 @@ var rows = [
             "local_installation"
         ],
         "homepage": "https://www.algaebase.org/",
-        "api_documentation": "https://www.algaebase.org/api/"
+        "api_documentation": "https://www.algaebase.org/api/",
+        "direct_matching_restriction": 5000,
+        "file_matching_restriction": 0
     },
     {
         "id": 15,
@@ -981,7 +1011,9 @@ var rows = [
             "local_installation"
         ],
         "homepage": "https://www.catalogueoflife.org/",
-        "api_documentation": "(ChecklistBank) https://www.checklistbank.org/about/API"
+        "api_documentation": "(ChecklistBank) https://www.checklistbank.org/about/API",
+        "direct_matching_restriction": 5000,
+        "file_matching_restriction": 0
     },
     {
         "id": 16,
@@ -1052,7 +1084,9 @@ var rows = [
             "local_installation"
         ],
         "homepage": "https://www.itis.gov/",
-        "api_documentation": "https://www.itis.gov/ws_description.html"
+        "api_documentation": "https://www.itis.gov/ws_description.html",
+        "direct_matching_restriction": 5000,
+        "file_matching_restriction": 0
     },
     {
         "id": 17,
@@ -1124,7 +1158,9 @@ var rows = [
             "local_installation"
         ],
         "homepage": "https://paleobiodb.org/#/",
-        "api_documentation": "https://paleobiodb.org/data1.2/"
+        "api_documentation": "https://paleobiodb.org/data1.2/",
+        "direct_matching_restriction": 5000,
+        "file_matching_restriction": 0
     },
     {
         "id": 18,
@@ -1185,7 +1221,9 @@ var rows = [
             "local_installation"
         ],
         "homepage": "https://tropicos.org/home",
-        "api_documentation": "http://services.tropicos.org/"
+        "api_documentation": "http://services.tropicos.org/",
+        "direct_matching_restriction": 5000,
+        "file_matching_restriction": 0
     },
     {
         "id": 19,
@@ -1253,7 +1291,9 @@ var rows = [
             "local_installation"
         ],
         "homepage": "https://www.marinespecies.org",
-        "api_documentation": "https://www.marinespecies.org/rest/"
+        "api_documentation": "https://www.marinespecies.org/rest/",
+        "direct_matching_restriction": 5000,
+        "file_matching_restriction": 0
     },
     {
         "id": 20,
@@ -1319,7 +1359,9 @@ var rows = [
             "local_installation"
         ],
         "homepage": "https://eol.org/",
-        "api_documentation": "https://github.com/EOL/publishing/blob/master/doc/api.md"
+        "api_documentation": "https://github.com/EOL/publishing/blob/master/doc/api.md",
+        "direct_matching_restriction": 5000,
+        "file_matching_restriction": 0
     },
     {
         "id": 21,
@@ -1382,7 +1424,9 @@ var rows = [
             "local_installation"
         ],
         "homepage": "https://www.inaturalist.org/taxa",
-        "api_documentation": "https://api.inaturalist.org/v1/docs/"
+        "api_documentation": "https://api.inaturalist.org/v1/docs/",
+        "direct_matching_restriction": 5000,
+        "file_matching_restriction": 0
     },
     {
         "id": 22,
@@ -1446,7 +1490,9 @@ var rows = [
             "local_installation"
         ],
         "homepage": "https://nmdc.cn/fungalnames/",
-        "api_documentation": "https://nmdc.cn/fungalnames/towebservice"
+        "api_documentation": "https://nmdc.cn/fungalnames/towebservice",
+        "direct_matching_restriction": 5000,
+        "file_matching_restriction": 0
     },
     {
         "id": 23,
@@ -1505,7 +1551,9 @@ var rows = [
             "local_installation"
         ],
         "homepage": "https://www.mycobank.org/",
-        "api_documentation": "On request from Mycobank custodian."
+        "api_documentation": "On request from Mycobank custodian.",
+        "direct_matching_restriction": 5000,
+        "file_matching_restriction": 0
     },
     {
         "id": 24,
@@ -1569,7 +1617,9 @@ var rows = [
             "local_installation"
         ],
         "homepage": "https://www.indexfungorum.org/",
-        "api_documentation": "https://www.checklistbank.org/about/API"
+        "api_documentation": "https://www.checklistbank.org/about/API",
+        "direct_matching_restriction": 5000,
+        "file_matching_restriction": 0
     },
     {
         "id": 25,
@@ -1640,7 +1690,9 @@ var rows = [
             "local_installation"
         ],
         "homepage": "https://www.gbif.org/dataset/d7dddbf4-2cf0-4f39-9b2a-bb099caae36c",
-        "api_documentation": "https://techdocs.gbif.org/en/openapi/v1/species"
+        "api_documentation": "https://techdocs.gbif.org/en/openapi/v1/species",
+        "direct_matching_restriction": 5000,
+        "file_matching_restriction": 0
     },
     {
         "id": 26,
@@ -1710,7 +1762,9 @@ var rows = [
             "local_installation"
         ],
         "homepage": "https://www.ncbi.nlm.nih.gov/taxonomy",
-        "api_documentation": "https://www.ncbi.nlm.nih.gov/home/develop/api/"
+        "api_documentation": "https://www.ncbi.nlm.nih.gov/home/develop/api/",
+        "direct_matching_restriction": 5000,
+        "file_matching_restriction": 0
     },
     {
         "id": 27,
@@ -1750,7 +1804,9 @@ var rows = [
             "local_installation"
         ],
         "homepage": "https://inpn.mnhn.fr/programme/referentiel-taxonomique-taxref?lg=en",
-        "api_documentation": "https://taxref.mnhn.fr/taxref-web/api/doc"
+        "api_documentation": "https://taxref.mnhn.fr/taxref-web/api/doc",
+        "direct_matching_restriction": 5000,
+        "file_matching_restriction": 0
     },
     {
         "id": 28,
@@ -1810,7 +1866,9 @@ var rows = [
             "local_installation"
         ],
         "homepage": "",
-        "api_documentation": "https://api.bacdive.dsmz.de/; registration required"
+        "api_documentation": "https://api.bacdive.dsmz.de/; registration required",
+        "direct_matching_restriction": 5000,
+        "file_matching_restriction": 0
     },
     {
         "id": 29,
@@ -1871,7 +1929,9 @@ var rows = [
             "local_installation"
         ],
         "homepage": "https://powo.science.kew.org/about-wcvp;",
-        "api_documentation": "(rudimentary API) https://barnabywalker.github.io/kewr/reference/download_wcvp.html"
+        "api_documentation": "(rudimentary API) https://barnabywalker.github.io/kewr/reference/download_wcvp.html",
+        "direct_matching_restriction": 5000,
+        "file_matching_restriction": 0
     },
     {
         "id": 30,
@@ -1936,7 +1996,9 @@ var rows = [
             "local_installation"
         ],
         "homepage": "https://wfoplantlist.org/",
-        "api_documentation": "https://list.worldfloraonline.org/"
+        "api_documentation": "https://list.worldfloraonline.org/",
+        "direct_matching_restriction": 5000,
+        "file_matching_restriction": 0
     },
     {
         "id": 31,
@@ -2000,7 +2062,9 @@ var rows = [
             "local_installation"
         ],
         "homepage": "https://www.algaebase.org/",
-        "api_documentation": "https://www.algaebase.org/api/"
+        "api_documentation": "https://www.algaebase.org/api/",
+        "direct_matching_restriction": 5000,
+        "file_matching_restriction": 1000000
     },
     {
         "id": 32,
@@ -2036,7 +2100,9 @@ var rows = [
             "local_installation"
         ],
         "homepage": "https://artsdatabanken.no/",
-        "api_documentation": "https://nortaxa.artsdatabanken.no/swagger/index.html"
+        "api_documentation": "https://nortaxa.artsdatabanken.no/swagger/index.html",
+        "direct_matching_restriction": 5000,
+        "file_matching_restriction": 1000000
     },
     {
         "id": 33,
@@ -2100,7 +2166,9 @@ var rows = [
             "local_installation"
         ],
         "homepage": "",
-        "api_documentation": ""
+        "api_documentation": "",
+        "direct_matching_restriction": 5000,
+        "file_matching_restriction": 1000000
     },
     {
         "id": 34,
@@ -2139,7 +2207,9 @@ var rows = [
             "local_installation"
         ],
         "homepage": "https://biodiversitydata.se/",
-        "api_documentation": "https://api.biodiversitydata.se/api.html?urls.primaryName=Species"
+        "api_documentation": "https://api.biodiversitydata.se/api.html?urls.primaryName=Species",
+        "direct_matching_restriction": 5000,
+        "file_matching_restriction": 1000000
     },
     {
         "id": 35,
@@ -2210,7 +2280,9 @@ var rows = [
             "local_installation"
         ],
         "homepage": "https://www.gbif.org/dataset/d7dddbf4-2cf0-4f39-9b2a-bb099caae36c",
-        "api_documentation": "https://techdocs.gbif.org/en/openapi/v1/species"
+        "api_documentation": "https://techdocs.gbif.org/en/openapi/v1/species",
+        "direct_matching_restriction": 5000,
+        "file_matching_restriction": 1000000
     },
     {
         "id": 36,
@@ -2281,7 +2353,9 @@ var rows = [
             "local_installation"
         ],
         "homepage": "https://www.itis.gov/",
-        "api_documentation": "https://www.itis.gov/ws_description.html"
+        "api_documentation": "https://www.itis.gov/ws_description.html",
+        "direct_matching_restriction": 5000,
+        "file_matching_restriction": 1000000
     },
     {
         "id": 37,
@@ -2342,7 +2416,9 @@ var rows = [
             "local_installation"
         ],
         "homepage": "https://ictv.global/",
-        "api_documentation": ""
+        "api_documentation": "",
+        "direct_matching_restriction": 5000,
+        "file_matching_restriction": 1000000
     },
     {
         "id": 38,
@@ -2399,7 +2475,9 @@ var rows = [
             "local_installation"
         ],
         "homepage": "https://www.indexfungorum.org/",
-        "api_documentation": "https://www.checklistbank.org/about/API"
+        "api_documentation": "https://www.checklistbank.org/about/API",
+        "direct_matching_restriction": 5000,
+        "file_matching_restriction": 1000000
     },
     {
         "id": 39,
@@ -2465,7 +2543,9 @@ var rows = [
             "local_installation"
         ],
         "homepage": "https://www.inaturalist.org/taxa",
-        "api_documentation": "https://api.inaturalist.org/v1/docs/"
+        "api_documentation": "https://api.inaturalist.org/v1/docs/",
+        "direct_matching_restriction": 5000,
+        "file_matching_restriction": 1000000
     },
     {
         "id": 40,
@@ -2526,7 +2606,9 @@ var rows = [
             "local_installation"
         ],
         "homepage": "https://www.ipni.org/",
-        "api_documentation": "In preparation according to https://www.ipni.org/about"
+        "api_documentation": "In preparation according to https://www.ipni.org/about",
+        "direct_matching_restriction": 5000,
+        "file_matching_restriction": 1000000
     },
     {
         "id": 41,
@@ -2565,7 +2647,9 @@ var rows = [
             "local_installation"
         ],
         "homepage": "https://info.laji.fi/en/frontpage/mission/",
-        "api_documentation": "https://api.laji.fi/explorer/"
+        "api_documentation": "https://api.laji.fi/explorer/",
+        "direct_matching_restriction": 5000,
+        "file_matching_restriction": 1000000
     },
     {
         "id": 42,
@@ -2625,7 +2709,9 @@ var rows = [
             "local_installation"
         ],
         "homepage": "https://github.com/idiv-biodiversity/LCVP",
-        "api_documentation": ""
+        "api_documentation": "",
+        "direct_matching_restriction": 5000,
+        "file_matching_restriction": 1000000
     },
     {
         "id": 43,
@@ -2689,7 +2775,9 @@ var rows = [
             "local_installation"
         ],
         "homepage": "https://www.mycobank.org/",
-        "api_documentation": "On request from Mycobank custodian."
+        "api_documentation": "On request from Mycobank custodian.",
+        "direct_matching_restriction": 5000,
+        "file_matching_restriction": 1000000
     },
     {
         "id": 44,
@@ -2752,7 +2840,9 @@ var rows = [
             "local_installation"
         ],
         "homepage": "https://www.ncbi.nlm.nih.gov/taxonomy",
-        "api_documentation": "https://www.ncbi.nlm.nih.gov/home/develop/api/"
+        "api_documentation": "https://www.ncbi.nlm.nih.gov/home/develop/api/",
+        "direct_matching_restriction": 5000,
+        "file_matching_restriction": 1000000
     },
     {
         "id": 45,
@@ -2825,7 +2915,9 @@ var rows = [
             "local_installation"
         ],
         "homepage": "https://paleobiodb.org/#/",
-        "api_documentation": "https://paleobiodb.org/data1.2/"
+        "api_documentation": "https://paleobiodb.org/data1.2/",
+        "direct_matching_restriction": 5000,
+        "file_matching_restriction": 1000000
     },
     {
         "id": 46,
@@ -2889,7 +2981,9 @@ var rows = [
             "local_installation"
         ],
         "homepage": "https://www.speciesfungorum.org/",
-        "api_documentation": "(ChecklistBank) https://www.checklistbank.org/about/API"
+        "api_documentation": "(ChecklistBank) https://www.checklistbank.org/about/API",
+        "direct_matching_restriction": 5000,
+        "file_matching_restriction": 1000000
     },
     {
         "id": 47,
@@ -2929,7 +3023,9 @@ var rows = [
             "local_installation"
         ],
         "homepage": "https://inpn.mnhn.fr/programme/referentiel-taxonomique-taxref?lg=en",
-        "api_documentation": "https://taxref.mnhn.fr/taxref-web/api/doc"
+        "api_documentation": "https://taxref.mnhn.fr/taxref-web/api/doc",
+        "direct_matching_restriction": 5000,
+        "file_matching_restriction": 1000000
     },
     {
         "id": 48,
@@ -2991,7 +3087,9 @@ var rows = [
             "local_installation"
         ],
         "homepage": "https://tropicos.org/home",
-        "api_documentation": "http://services.tropicos.org/"
+        "api_documentation": "http://services.tropicos.org/",
+        "direct_matching_restriction": 5000,
+        "file_matching_restriction": 1000000
     },
     {
         "id": 49,
@@ -3031,7 +3129,9 @@ var rows = [
             "local_installation"
         ],
         "homepage": "https://www.nhm.ac.uk/our-science/data/uk-species.html",
-        "api_documentation": "https://docs.ckan.org/en/latest/api/index.html"
+        "api_documentation": "https://docs.ckan.org/en/latest/api/index.html",
+        "direct_matching_restriction": 5000,
+        "file_matching_restriction": 1000000
     },
     {
         "id": 50,
@@ -3094,7 +3194,9 @@ var rows = [
             "local_installation"
         ],
         "homepage": "https://powo.science.kew.org/about-wcvp;",
-        "api_documentation": "(rudimentary API) https://barnabywalker.github.io/kewr/reference/download_wcvp.html"
+        "api_documentation": "(rudimentary API) https://barnabywalker.github.io/kewr/reference/download_wcvp.html",
+        "direct_matching_restriction": 5000,
+        "file_matching_restriction": 1000000
     },
     {
         "id": 51,
@@ -3159,7 +3261,9 @@ var rows = [
             "local_installation"
         ],
         "homepage": "https://wfoplantlist.org/",
-        "api_documentation": "https://list.worldfloraonline.org/"
+        "api_documentation": "https://list.worldfloraonline.org/",
+        "direct_matching_restriction": 5000,
+        "file_matching_restriction": 1000000
     },
     {
         "id": 52,
@@ -3227,7 +3331,9 @@ var rows = [
             "local_installation"
         ],
         "homepage": "https://www.marinespecies.org",
-        "api_documentation": "https://www.marinespecies.org/rest/"
+        "api_documentation": "https://www.marinespecies.org/rest/",
+        "direct_matching_restriction": 5000,
+        "file_matching_restriction": 1000000
     },
     {
         "id": 53,
@@ -3285,7 +3391,9 @@ var rows = [
             "local_installation"
         ],
         "homepage": "",
-        "api_documentation": ""
+        "api_documentation": "",
+        "direct_matching_restriction": 5000,
+        "file_matching_restriction": 0
     },
     {
         "id": 54,
@@ -3312,7 +3420,9 @@ var rows = [
             "local_installation"
         ],
         "homepage": "",
-        "api_documentation": ""
+        "api_documentation": "",
+        "direct_matching_restriction": 5000,
+        "file_matching_restriction": 0
     },
     {
         "id": 55,
@@ -3376,6 +3486,8 @@ var rows = [
             "local_installation"
         ],
         "homepage": "",
-        "api_documentation": ""
+        "api_documentation": "",
+        "direct_matching_restriction": 5000,
+        "file_matching_restriction": 1000000
     }
 ]

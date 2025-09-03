@@ -237,16 +237,13 @@
 	  <div id="filter-data-size" data-collapse class="filter col c3">
         <h4>Number of records</h4>
         <div id="filter-data-size-content" class="filter-content">
-		
-		    This filter does not work yet.
-			<div class="inactive">
 			Number of names to be check simulaneously:
 			<br />
 			<br />
 			In the User Interface (add items via copy &amp; paste)
 			<ul class="tree" style="margin-left: 15px;">
 				<li>
-					<input v-model="filter_size_ui" class="" type="radio" id="size.ui.small" value="small" />
+					<input v-model="filter_size_ui" class="" type="radio" id="size.ui.small" value="small" checked="checked" />
 					<label for="size.ui.small">less or equal 5000</label>
 				</li>
 				<li>
@@ -258,7 +255,7 @@
 			Via file upload
 			<ul class="tree" style="margin-left: 15px;">
 				<li>
-					<input v-model="filter_size_upload" class="" type="radio" id="size.upload.small" value="small" />
+					<input v-model="filter_size_upload" class="" type="radio" id="size.upload.small" value="small" checked="checked" />
 					<label for="size.upload.small">less or equal 5000</label>
 				</li>
 				<li>
@@ -266,7 +263,6 @@
 					<label for="size.upload.large">more than 5000</label>
 				</li>
 			</ul>
-			</div>
 		</div>
       </div>
 	  </div>
@@ -451,8 +447,8 @@ var vm = new Vue({
   data: {
 	filter_geographic: [],
 	filter_taxonomic: [],
-	filter_size_ui: [],
-	filter_size_upload: [],
+	filter_size_ui: 'small',  //not an array, as it is controlled radio buttons (= only one value)
+	filter_size_upload: 'small',  //not an array, as it is controlled radio buttons (= only one value)
 	filter_purpose: [],
 	filter_linkage: 'default', //not an array, as it is controlled radio buttons (= only one value)
 	filter_requirements: [],
@@ -550,7 +546,7 @@ var vm = new Vue({
 		  var filter_purpose = this.filter_purpose;
 		  var filter_linkage = this.filter_linkage;
 		  var filter_requirements = this.filter_requirements;
-			console.log(filter_requirements);
+			console.log(filter_size_ui);
 		  
 	  	  return this.items.filter(function(item, index) {
 			output = true;
@@ -569,7 +565,18 @@ var vm = new Vue({
 					return false;
 				}
 			}
-			
+			if(filter_size_upload == "large"){
+				//only filter for large, small is the default case which will show all results
+				if(item.file_matching_restriction <= 5000){
+					return false;
+				}
+			}
+			if(filter_size_ui == "large"){
+				//only filter for large, small is the default case which will show all results
+				if(item.direct_matching_restriction <= 5000){
+					return false;
+				}
+			}
 			if(filter_linkage == "default"){
 				//do nothing
 			}else if(item.linkage.indexOf(filter_linkage) == -1){
