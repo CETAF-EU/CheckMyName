@@ -376,7 +376,7 @@
                   {{ item.dataset_name }}
                 </td>
 				<td>
-				  <span class="bubble bubble-taxon" style="" v-for="group in item.organism_groups">{{ showLabel(group, 'organism_group') }}</span>
+				  <span class="bubble bubble-taxon" style="" v-for="group in item.organism_groups" v-if="group != 'multiple'">{{ showLabel(group, 'organism_group') }}</span>
                 </td>
                 <td >
   				  <span class="bubble bubble-feature"  v-for="requirement in item.requirements">{{ showLabel(requirement, 'requirements') }}</span>
@@ -413,11 +413,11 @@
 				</tr>
 				<tr v-if="selected_record.organism_groups">
 					<td>Taxonomic Scope</td>
-					<td><span class="bubble bubble-taxon" style="" v-for="group in selected_record.organism_groups">{{ group }}</span></td>
+					<td><span class="bubble bubble-taxon" style="" v-for="group in selected_record.organism_groups" v-if="group != 'multiple'">{{ showLabel(group, 'organism_group') }}</span></td>
 				</tr>
 				<tr v-if="selected_record.requirements">
 					<td>Features</td>
-					<td><span class="bubble bubble-feature" style="" v-for="feature in selected_record.requirements">{{ feature }}</span></td>
+					<td><span class="bubble bubble-feature" style="" v-for="feature in selected_record.requirements">{{ showLabel(feature, 'requirements') }}</span></td>
 				</tr>
 				<tr v-if="selected_record.homepage">
 					<td>Website of the Dataset</td>
@@ -473,19 +473,19 @@ var vm = new Vue({
 			return "";
 		}
 		if(context == "" || !Object.keys(this.labels).includes(context)){
-			return text.replaceAll("_"," ");
+			return text.replaceAll("_"," ").split(' ').map(word => word.charAt(0).toUpperCase() + word.slice(1)).join(' ');
 		}
 		if(subcontext == ""){
 			if(!Object.keys(this.labels[context]).includes(text)){
-				return text.replaceAll("_"," ");
+				return text.replaceAll("_"," ").split(' ').map(word => word.charAt(0).toUpperCase() + word.slice(1)).join(' ');
 			}else{
 				return this.labels[context][text];
 			}
 		}else{
 			if(!Object.keys(this.labels[context]).includes(text)){
-				return text.replaceAll("_"," ");
+				return text.replaceAll("_"," ").split(' ').map(word => word.charAt(0).toUpperCase() + word.slice(1)).join(' ');
 			}else if(!Object.keys(this.labels[context][text]).includes(subcontext)){
-				return text.replaceAll("_"," ");
+				return text.replaceAll("_"," ").split(' ').map(word => word.charAt(0).toUpperCase() + word.slice(1)).join(' ');
 			}else{
 				return this.labels[context][text][subcontext];
 			}

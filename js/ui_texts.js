@@ -140,7 +140,13 @@ var ui_texts = {
 		"acceptance": "Acceptance",
 	},
 	"requirements": {
-		"asdf": "ASDF"
+		"api": "API",
+		"open_refine_reconciliation_if":"OpenRefine Reconciliation Interface"
+	},
+	"organism_group": {
+		"contains_fossils": "(contains fossils)",
+		"marine_only":"(marine only)",
+		"fossil_only":"(fossil only)"
 	}
 	
 }
