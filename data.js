@@ -7,14 +7,14 @@ var rows = [
         "notes": "",
         "caveats": "",
         "organism_groups": [
-            "multiple",
             "algae",
             "animalia",
             "bacteria",
             "cyanobacteria",
             "fungi",
             "plantae",
-            "virus"
+            "virus",
+            "multiple"
         ],
         "geographic_scope": [
             "global",
@@ -80,14 +80,14 @@ var rows = [
         "notes": "",
         "caveats": "",
         "organism_groups": [
-            "multiple",
             "algae",
             "animalia",
             "bacteria",
             "cyanobacteria",
             "fungi",
             "plantae",
-            "virus"
+            "virus",
+            "multiple"
         ],
         "geographic_scope": [
             "global",
@@ -150,14 +150,14 @@ var rows = [
         "notes": "Will probably be replaced by GBIF/COL ChecklistBank name matching",
         "caveats": "",
         "organism_groups": [
-            "multiple",
             "algae",
             "animalia",
             "bacteria",
             "cyanobacteria",
             "fungi",
             "plantae",
-            "virus"
+            "virus",
+            "multiple"
         ],
         "geographic_scope": [
             "global",
@@ -631,12 +631,12 @@ var rows = [
         "notes": "",
         "caveats": "Potential erroneous exact matches returned for canonical name only. Erroneous exact match returned for infraspecies when species is found. Erroneous ambiguous match for family when genus is found. Phonetic matching misleading (Lycopodiaceae => Leucopdum)",
         "organism_groups": [
-            "marine_only",
             "algae",
             "animalia",
             "cyanobacteria",
             "fungi",
-            "plantae"
+            "plantae",
+            "marine_only"
         ],
         "geographic_scope": [
             "global",
@@ -951,14 +951,14 @@ var rows = [
         "notes": "",
         "caveats": "Name resolve to other ranks when no exact match is found (\"PartialExact\").",
         "organism_groups": [
-            "multiple",
             "algae",
             "animalia",
             "bacteria",
             "cyanobacteria",
             "fungi",
             "plantae",
-            "virus"
+            "virus",
+            "multiple"
         ],
         "geographic_scope": [
             "global",
@@ -1023,14 +1023,14 @@ var rows = [
         "notes": "Dataset updated 2025-05-23 [11 jul 2025]",
         "caveats": "Name resolve to other ranks when no exact match is found (\"PartialExact\").",
         "organism_groups": [
-            "multiple",
             "algae",
             "animalia",
             "bacteria",
             "cyanobacteria",
             "fungi",
             "plantae",
-            "virus"
+            "virus",
+            "multiple"
         ],
         "geographic_scope": [
             "global",
@@ -1096,16 +1096,16 @@ var rows = [
         "notes": "",
         "caveats": "Result does not include orthographic variants present in PaleoBase (\"NoMatch\"). Synonymic names apparently also not included in the dataset. Name resolve to other ranks when no exact match is found (\"PartialExact\").",
         "organism_groups": [
-            "fossil_only",
-            "contains_fossils",
-            "multiple",
             "algae",
             "animalia",
             "bacteria",
             "cyanobacteria",
             "fungi",
             "plantae",
-            "virus"
+            "virus",
+            "fossil_only",
+            "contains_fossils",
+            "multiple"
         ],
         "geographic_scope": [
             "global",
@@ -1233,12 +1233,12 @@ var rows = [
         "notes": "Dataset updated 2025-05-23 [12 jul 2025]",
         "caveats": "Name resolve to other ranks when no exact match is found (\"PartialExact\").",
         "organism_groups": [
-            "marine_only",
             "algae",
             "animalia",
             "cyanobacteria",
             "fungi",
-            "plantae"
+            "plantae",
+            "marine_only"
         ],
         "geographic_scope": [
             "global",
@@ -1303,15 +1303,15 @@ var rows = [
         "notes": "Updated 2025-02-04 [12 jul 2025].",
         "caveats": "Name resolve to other ranks when no exact match is found (\"PartialExact\"). The IDs cited (\"bare-name-#####\") do not resolve to taxon or name page.",
         "organism_groups": [
-            "contains_fossils",
-            "multiple",
             "algae",
             "animalia",
             "bacteria",
             "cyanobacteria",
             "fungi",
             "plantae",
-            "virus"
+            "virus",
+            "contains_fossils",
+            "multiple"
         ],
         "geographic_scope": [
             "global",
@@ -1371,14 +1371,14 @@ var rows = [
         "notes": "Updated 2025-05-1 [12 jul 2025]",
         "caveats": "Name resolve to other ranks when no exact match is found (\"PartialExact\"). Only accepted names. ID given resolves to taxon page.",
         "organism_groups": [
-            "multiple",
             "algae",
             "animalia",
             "bacteria",
             "cyanobacteria",
             "fungi",
             "plantae",
-            "virus"
+            "virus",
+            "multiple"
         ],
         "geographic_scope": [
             "global",
@@ -1629,14 +1629,14 @@ var rows = [
         "notes": "Updated 2024-01-11 [12 jul 2025]",
         "caveats": "Name resolve to other ranks when no exact match is found (\"PartialExact\").",
         "organism_groups": [
-            "multiple",
             "algae",
             "animalia",
             "bacteria",
             "cyanobacteria",
             "fungi",
             "plantae",
-            "virus"
+            "virus",
+            "multiple"
         ],
         "geographic_scope": [
             "global",
@@ -1702,14 +1702,14 @@ var rows = [
         "notes": "ID given is the NCBI \"TREE&ID\": https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?mode=Tree&id=#####",
         "caveats": "Name resolved to other ranks when no exact match is found (\"PartialExact\").",
         "organism_groups": [
-            "multiple",
             "algae",
             "animalia",
             "bacteria",
             "cyanobacteria",
             "fungi",
             "plantae",
-            "virus"
+            "virus",
+            "multiple"
         ],
         "geographic_scope": [
             "global",
@@ -1774,14 +1774,14 @@ var rows = [
         "notes": "",
         "caveats": "Name resolved to other ranks when no exact match is found (\"PartialExact\").",
         "organism_groups": [
-            "multiple",
             "algae",
             "animalia",
             "bacteria",
             "cyanobacteria",
             "fungi",
             "plantae",
-            "virus"
+            "virus",
+            "multiple"
         ],
         "geographic_scope": [
             "fr"
@@ -2178,14 +2178,14 @@ var rows = [
         "notes": "CLB dataset 2041 2025-07-08 [12 jul 2025]",
         "caveats": "",
         "organism_groups": [
-            "multiple",
             "algae",
             "animalia",
             "bacteria",
             "cyanobacteria",
             "fungi",
             "plantae",
-            "virus"
+            "virus",
+            "multiple"
         ],
         "geographic_scope": [
             "se"
@@ -2219,14 +2219,14 @@ var rows = [
         "notes": "CLB dataset 53147 2023-08-28 [12 jul 2025]",
         "caveats": "Dataset will not be updated.",
         "organism_groups": [
-            "multiple",
             "algae",
             "animalia",
             "bacteria",
             "cyanobacteria",
             "fungi",
             "plantae",
-            "virus"
+            "virus",
+            "multiple"
         ],
         "geographic_scope": [
             "global",
@@ -2292,14 +2292,14 @@ var rows = [
         "notes": "CLB dataset 2144 2025-06-26 [12 jul 2025]",
         "caveats": "",
         "organism_groups": [
-            "multiple",
             "algae",
             "animalia",
             "bacteria",
             "cyanobacteria",
             "fungi",
             "plantae",
-            "virus"
+            "virus",
+            "multiple"
         ],
         "geographic_scope": [
             "global",
@@ -2487,14 +2487,14 @@ var rows = [
         "notes": "CLB dataset 139831 2025-07-01 [13 jun 2025]",
         "caveats": "",
         "organism_groups": [
-            "multiple",
             "algae",
             "animalia",
             "bacteria",
             "cyanobacteria",
             "fungi",
             "plantae",
-            "virus"
+            "virus",
+            "multiple"
         ],
         "geographic_scope": [
             "global",
@@ -2618,14 +2618,14 @@ var rows = [
         "notes": "CLB dataset 290762 2025-06-17 [13 jun 2025]",
         "caveats": "",
         "organism_groups": [
-            "multiple",
             "algae",
             "animalia",
             "bacteria",
             "cyanobacteria",
             "fungi",
             "plantae",
-            "virus"
+            "virus",
+            "multiple"
         ],
         "geographic_scope": [
             "fi"
@@ -2787,14 +2787,14 @@ var rows = [
         "notes": "CLB dataset 2169 2022-03-07 [13 jul 2025]",
         "caveats": "Dataset outdated?",
         "organism_groups": [
-            "multiple",
             "algae",
             "animalia",
             "bacteria",
             "cyanobacteria",
             "fungi",
             "plantae",
-            "virus"
+            "virus",
+            "multiple"
         ],
         "geographic_scope": [
             "global",
@@ -2852,16 +2852,16 @@ var rows = [
         "notes": "CLB dataset 1174 2025-01-26 [13 jun 2025]",
         "caveats": "ID output with prefix \"txn: \". Result does not include orthographic variants present in PaleoBase (matchType \"none\"). Synonymic names apparently also not included in the dataset.",
         "organism_groups": [
-            "fossil_only",
-            "contains_fossils",
-            "multiple",
             "algae",
             "animalia",
             "bacteria",
             "cyanobacteria",
             "fungi",
             "plantae",
-            "virus"
+            "virus",
+            "fossil_only",
+            "contains_fossils",
+            "multiple"
         ],
         "geographic_scope": [
             "global",
@@ -2993,14 +2993,14 @@ var rows = [
         "notes": "CLB dataset 2008 2025-03-10 [13 jul 2025]",
         "caveats": "",
         "organism_groups": [
-            "multiple",
             "algae",
             "animalia",
             "bacteria",
             "cyanobacteria",
             "fungi",
             "plantae",
-            "virus"
+            "virus",
+            "multiple"
         ],
         "geographic_scope": [
             "fr"
@@ -3099,14 +3099,14 @@ var rows = [
         "notes": "CLB dataset 7888 2023-02-16 [13 jul 2025]",
         "caveats": "The ID given is the \"Taxon Version Key\". Because it is unique and retained for the historical record, it can serve as a name id (but a name may have several taxon version keys).",
         "organism_groups": [
-            "multiple",
             "algae",
             "animalia",
             "bacteria",
             "cyanobacteria",
             "fungi",
             "plantae",
-            "virus"
+            "virus",
+            "multiple"
         ],
         "geographic_scope": [
             "it",
@@ -3273,12 +3273,12 @@ var rows = [
         "notes": "CLB dataset 2011 2025-07-01 [13 jul 2025]",
         "caveats": "ID cited as LSID (e.g. urn:lsid:marinespecies.org:taxname:134241) - the numeric part is the Aphia-ID.",
         "organism_groups": [
-            "marine_only",
             "algae",
             "animalia",
             "cyanobacteria",
             "fungi",
-            "plantae"
+            "plantae",
+            "marine_only"
         ],
         "geographic_scope": [
             "global",
@@ -3343,8 +3343,8 @@ var rows = [
         "notes": "Species are matched to genera (which may be an advantage in this specific case, checking the generic or subgeneric name component of species and infraspecif names).",
         "caveats": "Synonyms are listed as accepted genera.",
         "organism_groups": [
-            "contains_fossils",
-            "animalia"
+            "animalia",
+            "contains_fossils"
         ],
         "geographic_scope": [
             "global",
@@ -3432,8 +3432,8 @@ var rows = [
         "notes": "CLB dataset \t12639. Integer ids are resolved by appending them to https://www.checklistbank.org/dataset/######/name/, e.g., https://www.checklistbank.org/dataset/126539/name/. [Rod Page]",
         "caveats": "",
         "organism_groups": [
-            "contains_fossils",
-            "animalia"
+            "animalia",
+            "contains_fossils"
         ],
         "geographic_scope": [
             "global",
