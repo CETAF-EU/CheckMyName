@@ -68,7 +68,7 @@ var rows = [
             "local_installation"
         ],
         "homepage": "https://www.catalogueoflife.org/",
-        "api_documentation": "(ChecklistBank) https://www.checklistbank.org/about/API",
+        "api_documentation": "https://www.checklistbank.org/about/API",
         "direct_matching_restriction": 5000,
         "file_matching_restriction": 1000000
     },
@@ -138,7 +138,7 @@ var rows = [
             "local_installation"
         ],
         "homepage": "",
-        "api_documentation": "(ChecklistBank) https://www.checklistbank.org/about/API",
+        "api_documentation": "https://www.checklistbank.org/about/API",
         "direct_matching_restriction": 5000,
         "file_matching_restriction": 1000000
     },
@@ -443,7 +443,7 @@ var rows = [
             "download_full_from_website"
         ],
         "homepage": "https://powo.science.kew.org/about-wcvp;",
-        "api_documentation": "(rudimentary API) https://barnabywalker.github.io/kewr/reference/download_wcvp.html",
+        "api_documentation": "https://barnabywalker.github.io/kewr/reference/download_wcvp.html",
         "direct_matching_restriction": 1000,
         "file_matching_restriction": 1000000
     },
@@ -619,7 +619,7 @@ var rows = [
             "local_installation"
         ],
         "homepage": "https://powo.science.kew.org/about-wcvp;",
-        "api_documentation": "(rudimentary API) https://barnabywalker.github.io/kewr/reference/download_wcvp.html",
+        "api_documentation": "https://barnabywalker.github.io/kewr/reference/download_wcvp.html",
         "direct_matching_restriction": 0,
         "file_matching_restriction": 0
     },
@@ -752,7 +752,7 @@ var rows = [
             "api"
         ],
         "homepage": "https://powo.science.kew.org/about-wcvp;",
-        "api_documentation": "(rudimentary API) https://barnabywalker.github.io/kewr/reference/download_wcvp.html",
+        "api_documentation": "https://barnabywalker.github.io/kewr/reference/download_wcvp.html",
         "direct_matching_restriction": 5000,
         "file_matching_restriction": 0
     },
@@ -1011,7 +1011,7 @@ var rows = [
             "local_installation"
         ],
         "homepage": "https://www.catalogueoflife.org/",
-        "api_documentation": "(ChecklistBank) https://www.checklistbank.org/about/API",
+        "api_documentation": "https://www.checklistbank.org/about/API",
         "direct_matching_restriction": 5000,
         "file_matching_restriction": 0
     },
@@ -1551,7 +1551,7 @@ var rows = [
             "local_installation"
         ],
         "homepage": "https://www.mycobank.org/",
-        "api_documentation": "On request from Mycobank custodian.",
+        "api_documentation": "https://www.mycobank.org/Contact",
         "direct_matching_restriction": 5000,
         "file_matching_restriction": 0
     },
@@ -1866,7 +1866,7 @@ var rows = [
             "local_installation"
         ],
         "homepage": "",
-        "api_documentation": "https://api.bacdive.dsmz.de/; registration required",
+        "api_documentation": "https://api.bacdive.dsmz.de/",
         "direct_matching_restriction": 5000,
         "file_matching_restriction": 0
     },
@@ -1929,7 +1929,7 @@ var rows = [
             "local_installation"
         ],
         "homepage": "https://powo.science.kew.org/about-wcvp;",
-        "api_documentation": "(rudimentary API) https://barnabywalker.github.io/kewr/reference/download_wcvp.html",
+        "api_documentation": "https://barnabywalker.github.io/kewr/reference/download_wcvp.html",
         "direct_matching_restriction": 5000,
         "file_matching_restriction": 0
     },
@@ -2165,7 +2165,7 @@ var rows = [
             "api",
             "local_installation"
         ],
-        "homepage": "",
+        "homepage": "https://boldsystems.org/",
         "api_documentation": "",
         "direct_matching_restriction": 5000,
         "file_matching_restriction": 1000000
@@ -2775,7 +2775,7 @@ var rows = [
             "local_installation"
         ],
         "homepage": "https://www.mycobank.org/",
-        "api_documentation": "On request from Mycobank custodian.",
+        "api_documentation": "https://www.mycobank.org/Contact",
         "direct_matching_restriction": 5000,
         "file_matching_restriction": 1000000
     },
@@ -2981,7 +2981,7 @@ var rows = [
             "local_installation"
         ],
         "homepage": "https://www.speciesfungorum.org/",
-        "api_documentation": "(ChecklistBank) https://www.checklistbank.org/about/API",
+        "api_documentation": "https://www.checklistbank.org/about/API",
         "direct_matching_restriction": 5000,
         "file_matching_restriction": 1000000
     },
@@ -3194,7 +3194,7 @@ var rows = [
             "local_installation"
         ],
         "homepage": "https://powo.science.kew.org/about-wcvp;",
-        "api_documentation": "(rudimentary API) https://barnabywalker.github.io/kewr/reference/download_wcvp.html",
+        "api_documentation": "https://barnabywalker.github.io/kewr/reference/download_wcvp.html",
         "direct_matching_restriction": 5000,
         "file_matching_restriction": 1000000
     },
